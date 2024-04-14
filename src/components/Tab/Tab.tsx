@@ -6,7 +6,7 @@ interface PropTypes {
 
 const Tab = ({ title }: PropTypes) => {
   return (
-    <div className={styles['']}>
+    <div className={styles['tab']}>
       {title}
     </div>
   )

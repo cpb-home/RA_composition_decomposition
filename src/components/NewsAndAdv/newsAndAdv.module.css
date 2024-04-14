@@ -1,0 +1,38 @@
+.newsAndAdv {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.news {
+    text-align: left;
+}
+
+.newsHeader {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 14px;
+    color: rgb(182, 182, 182);
+}
+
+.newsList {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.currencyRate {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 25px;
+    margin-left: 20px;
+}
+
+.adv {
+    text-align: left;
+}

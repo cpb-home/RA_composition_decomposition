@@ -1,0 +1,50 @@
+.usefullsItem {
+    width: 30%;
+}
+
+.usefullsHeader {
+    color: rgb(34, 99, 240);
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.usefullsBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.usefullsImgLine {
+    display: flex;
+    align-items: center;
+}
+
+.usefullsImgCont {
+    width: 50%;
+}
+
+.usefullsImgCont img {
+    width: 100%;
+}
+
+.usefullsTextCont {
+    width: 50%;
+    padding-right: 25%;
+}
+
+.usefullsBodyContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.usefullsBodyContentItem {
+    color: black;
+}
+
+.itemBold {
+    font-weight: bold;
+}
+
+.itemGrey {
+    color: rgb(182, 182, 182);
+}

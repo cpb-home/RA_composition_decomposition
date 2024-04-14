@@ -1,0 +1,12 @@
+.bannerCont {
+    width: calc(100% - 20px);
+    height: 100px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+.bannerCont img {
+    width: 82.5%;
+    object-fit: cover;
+}

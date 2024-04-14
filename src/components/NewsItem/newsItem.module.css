@@ -1,0 +1,22 @@
+.newsItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.newsItemIconCont {
+    width: 15px;
+    margin-right: 5px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.newsItemIconCont img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.newsItemTextCont {
+    color: black;
+    font-weight: 600;
+}

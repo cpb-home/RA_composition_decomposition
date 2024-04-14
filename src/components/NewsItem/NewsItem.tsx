@@ -7,7 +7,7 @@ interface PropTypes {
 
 const NewsItem = ({ content, icon }: PropTypes) => {
   return (
-    <div className={styles['']}>
+    <div className={styles['newsItem']}>
       <div className={styles['newsItemIconCont']}>
         <img src={icon} alt='картинка' />
       </div>

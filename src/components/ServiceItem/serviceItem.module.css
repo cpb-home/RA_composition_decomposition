@@ -1,0 +1,10 @@
+.serviceItem {
+    font-size: 18px;
+    color: rgb(34, 99, 240);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.serviceItem:hover {
+    color: blue;
+}

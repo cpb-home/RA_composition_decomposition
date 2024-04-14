@@ -1,0 +1,8 @@
+.tab {
+    color: rgb(133, 172, 255);
+    font-size: 20px;
+}
+
+.tab:first-child {
+    color: rgb(34, 99, 240);
+}

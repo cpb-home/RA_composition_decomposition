@@ -1,6 +1,8 @@
 import styles from './newsAndAdv.module.css'
 import Tab from '../Tab/Tab'
 import NewsItem from '../NewsItem/NewsItem'
+import CurrencyItem from '../CurrencyItem/CurrencyItem'
+import Adv from '../Adv/Adv'
 
 interface ITab {
   title: string
@@ -11,6 +13,13 @@ interface News {
   id: number;
   icon: string;
   content: string;
+}
+
+interface Rates {
+  id: number;
+  currency: string;
+  rate: number;
+  changes: string;
 }
 
 const NewsAndAdv = () => {
@@ -28,17 +37,28 @@ const NewsAndAdv = () => {
     {id: 4, content: "Министр юстиции: авария на фуникулёре в Анталье могла произойти из-за коррозии", icon: 'https://avatars.mds.yandex.net/i?id=534a84b561383b722ce2b2236679042ba37326b7-12420613-images-thumbs&n=13'}
   ];
 
+  const ratesList: Rates[] = [
+    {id: 0, currency: "USD MOEX", rate: 93.34, changes: '+0.09'},
+    {id: 1, currency: "EUR MOEX", rate: 102.23, changes: '+0.14'},
+    {id: 2, currency: "НЕФТЬ", rate: 64.90, changes: '+1.63%'},
+  ];
+
   return (
     <div className={styles['newsAndAdv']}>
-      <div className={styles['newsAndAdv__header']}>
-        {tabsList.map(el => <Tab key={el.id} title={el.title} />)}
-        <div className={styles['date']}></div>
+      <div className={styles['news']}>
+        <div className={styles['newsHeader']}>
+          {tabsList.map(el => <Tab key={el.id} title={el.title} />)}
+          <div className={styles['date']}>14 апреля, воскресенье 12:04</div>
+        </div>
+        <div className={styles['newsList']}>
+          {newsList.map(el => <NewsItem key={el.id} content={el.content} icon={el.icon} />)}
+        </div>
+        <div className={styles['currencyRate']}>
+          {ratesList.map(el => <CurrencyItem key={el.id} currency={el.currency} rate={el.rate} changes={el.changes} />)}
+        </div>
       </div>
-      <div className={styles['newsList']}>
-        {newsList.map(el => <NewsItem key={el.id} content={el.content} icon={el.icon} />)}
-      </div>
-      <div className={styles['currencyRate']}>
-
+      <div className={styles['adv']}>
+        <Adv />
       </div>
     </div>
   )

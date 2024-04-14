@@ -1,0 +1,17 @@
+.advItem {
+    text-align: left;
+}
+
+.advItem img {
+    width: 30%;
+}
+
+.advItem h5 {
+    font-size: 20px;
+    color: rgb(34, 99, 240);
+    margin: 5px 0;
+}
+
+.advItem p {
+    margin: 5px 0;
+}
